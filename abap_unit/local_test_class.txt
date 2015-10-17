@@ -1,0 +1,29 @@
+Name: 
+#ltcl
+
+Description:
+Local Test Class Generator
+
+Code:
+*----------------------------------------------------------------------*
+*       CLASS %local Test-Classname% DEFINITION
+*----------------------------------------------------------------------*
+CLASS %local Test-Classname% DEFINITION 
+    FOR TESTING
+    DURATION SHORT
+    RISK LEVEL HARMLESS
+    FINAL.
+
+  PRIVATE SECTION.
+	
+	|
+
+ENDCLASS.                    "%local Test-Classname% DEFINITION
+
+*----------------------------------------------------------------------*
+*       CLASS %local Test-Classname% IMPLEMENTATION
+*----------------------------------------------------------------------*
+CLASS %local Test-Classname% IMPLEMENTATION.
+
+
+ENDCLASS.                    "%local Test-Classname% IMPLEMENTATION

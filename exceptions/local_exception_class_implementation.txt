@@ -1,0 +1,24 @@
+Name:
+#excimp
+
+Descrion:
+Local Exception Class Generator (Implementation)
+
+Code:
+*----------------------------------------------------------------------*
+*       CLASS %local_exception_class_name% IMPLEMENTATION
+*----------------------------------------------------------------------*
+CLASS %local_exception_class_name% IMPLEMENTATION.
+
+  METHOD constructor.
+
+    super->constructor( ).
+
+    me->if_t100_message~t100key-msgid  = c_msgid.
+    me->if_t100_message~t100key-msgno  = c_msgno.
+
+    " ToDo: Map Message-Var's
+
+  ENDMETHOD.                    "constructor
+
+ENDCLASS.                    "%local_exception_class_name% IMPLEMENTATION

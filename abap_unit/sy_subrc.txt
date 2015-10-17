@@ -1,0 +1,8 @@
+Name: 
+#as
+
+Description:
+AUNIT Assert - Sy-Subrc
+
+Code:
+cl_abap_unit_assert=>assert_subrc( sy-subrc ).|

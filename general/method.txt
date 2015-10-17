@@ -1,0 +1,7 @@
+Name:
+Method
+
+CODE:
+METHOD |.
+
+ENDMETHOD.

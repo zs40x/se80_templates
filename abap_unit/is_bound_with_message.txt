@@ -1,0 +1,11 @@
+Name: 
+#abm
+
+Description:
+AUNIT Assert - is an Instance bound (with Message)
+
+Code:
+cl_abap_unit_assert=>assert_bound(
+    act = |
+    msg = 
+  ).

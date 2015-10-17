@@ -1,0 +1,12 @@
+Name: 
+#aem
+
+Description:
+AUNIT Assert - is Equal (with Message)
+
+Code:
+cl_abap_unit_assert=>assert_equals(
+    exp = |
+    act =
+    msg = 
+  ).

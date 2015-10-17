@@ -1,0 +1,11 @@
+Name: 
+#at
+
+Description:
+AUNIT Assert that
+
+Code:
+cl_abap_unit_assert=>assert_that(
+    exp = |
+    act =
+  ).

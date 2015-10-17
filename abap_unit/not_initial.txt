@@ -1,0 +1,8 @@
+Name: 
+#ani
+
+Description:
+AUNIT Assert - is not initial
+
+Code:
+cl_abap_unit_assert=>assert_not_initial( | ).

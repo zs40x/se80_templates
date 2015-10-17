@@ -1,0 +1,11 @@
+Name: 
+#ae
+
+Description:
+AUNIT Assert - is Equal
+
+Code:
+cl_abap_unit_assert=>assert_equals(
+    exp = |
+    act =
+  ).

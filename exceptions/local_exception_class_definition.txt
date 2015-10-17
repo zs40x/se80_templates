@@ -1,0 +1,28 @@
+Name:
+#excdef
+
+Description:
+Exception Class Generator (Definition)
+
+Code:
+*----------------------------------------------------------------------*
+*       CLASS %local_exception_class_name% DEFINITION
+*----------------------------------------------------------------------*
+CLASS %local_exception_class_name% DEFINITION
+    INHERITING FROM cx_no_check
+    FINAL.
+
+  PUBLIC SECTION.
+
+    CONSTANTS:
+      c_msgid TYPE msgid  VALUE '%msgid%',
+      c_msgno TYPE msgno  VALUE '%msgno%'.
+
+    INTERFACES:
+      if_t100_message.
+
+
+    METHODS:
+      constructor.
+
+ENDCLASS.                    "%local_exception_class_name% DEFINITION

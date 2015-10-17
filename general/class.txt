@@ -1,0 +1,7 @@
+Name:
+Class
+
+Code:
+CLASS |.
+
+ENDCLASS.

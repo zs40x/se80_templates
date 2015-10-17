@@ -1,0 +1,8 @@
+Name: 
+#ab
+
+Description:
+AUNIT Assert - is an Instance bound
+
+Code:
+cl_abap_unit_assert=>assert_bound( | ).
