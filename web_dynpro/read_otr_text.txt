@@ -1,0 +1,8 @@
+Name: 
+#otrtext
+
+Description:
+Read OTR Text
+
+Code:
+cl_wd_utilities=>get_otr_text_by_alias( '|' )
