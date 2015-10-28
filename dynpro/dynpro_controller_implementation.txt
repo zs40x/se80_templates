@@ -1,0 +1,58 @@
+Name: 
+#dpcontimp
+
+Description:
+Dynpro Controller Implementration Template
+
+Code:
+CLASS lcl_dynpro_%screen_number%_controller IMPLEMENTATION.
+
+  METHOD get.
+
+    IF o_singleton_instance IS NOT BOUND.
+      CREATE OBJECT o_singleton_instance.
+    ENDIF.
+
+    ro_self = o_singleton_instance.
+  ENDMETHOD.                    "get
+
+
+  METHOD constructor.
+
+  ENDMETHOD.                    "constructor
+
+  METHOD pbo.
+
+    me->do_init_controls( ).
+
+  ENDMETHOD.                    "pbo
+
+  METHOD  pai.
+
+    CASE i_ok_code.
+      WHEN 'BACK' OR 'CANC'.
+        SET SCREEN 0.
+        LEAVE SCREEN.
+    ENDCASE.
+
+  ENDMETHOD.                    "pai
+
+
+  METHOD do_init_controls.
+
+    IF me->mo_custom_container IS BOUND.
+
+    " ToDo: Refresh Controls
+
+      RETURN.
+    ENDIF.
+
+    CREATE OBJECT me->mo_custom_container
+      EXPORTING
+        container_name = 'CCONTAINER_%screen_number%'.
+
+    " ToDo: Initialize Controls
+
+  ENDMETHOD.                    "do_init_controls
+
+ENDCLASS.               "lcl_dynpro_%screen_number%_controller

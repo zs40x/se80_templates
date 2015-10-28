@@ -1,0 +1,36 @@
+Name: 
+#dpcontdef
+
+Description:
+Dynpro Controller Definition Template
+
+Code:
+CLASS lcl_dynpro_%screen_number%_controller DEFINITION
+    CREATE PRIVATE
+    FINAL.
+
+  PUBLIC SECTION.
+
+    CLASS-METHODS:
+      get
+        RETURNING value(ro_self) TYPE REF TO lcl_dynpro_%screen_number%_controller.
+
+    METHODS:
+      constructor,
+      pbo,
+      pai
+        IMPORTING
+          i_ok_code TYPE syucomm.
+
+  PRIVATE SECTION.
+
+    CLASS-DATA:
+       o_singleton_instance TYPE REF TO lcl_dynpro_%screen_number%_controller.
+
+    DATA:
+       mo_custom_container   TYPE REF TO cl_gui_custom_container.
+
+    METHODS:
+      do_init_controls.
+
+ENDCLASS.                    "lcl_dynpro_%screen_number%_controller DEFINITION
