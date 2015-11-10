@@ -1,0 +1,5 @@
+Description:
+Method Return Value
+
+Code:
+RETURNING VALUE (r_|) TYPE 
